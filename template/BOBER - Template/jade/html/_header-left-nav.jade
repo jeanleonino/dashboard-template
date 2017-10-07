@@ -1,0 +1,39 @@
+a(class='logo smooth-scroll', href='#')
+	img(src='img/logo.png' alt='logo' class='logo-white')
+	img(src='img/logodark.png' alt='logo' class='logo-dark')
+nav.top-menu
+	ul.sf-menu.sf-vertical
+
+		//Menu default
+		include _menu-default.jade
+	// Start toggle menu
+a(href='#', class="toggle-mnu")
+	span
+// Start mobile menu
+
+//Start social links
+ul.social-links.minimal
+	li
+		a(href='#')
+			i.fa.fa-facebook
+	li
+		a(href='#')
+			i.fa.fa-twitter
+	li
+		a(href='#')
+			i.fa.fa-skype
+	li
+		a(href='#')
+			i.fa.fa-linkedin
+//End social links
+
+include _mobile-nav.jade
+
+// End mobile menu
+
+
+//- // Start full screen top nav
+
+//- include _full-screen-nav.jade
+
+//- // End full screen top nav

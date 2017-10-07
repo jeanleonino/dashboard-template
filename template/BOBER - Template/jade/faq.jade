@@ -1,0 +1,131 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - FAQ
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		
+		// Start Content section
+		section.display-page.bg-dark-section.background-image(data-image='img/bg2.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content
+							// heading title
+							h1| Frequently Asked
+								span  Questions
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| We like to create a good and high-quality products. 
+									br 
+									| We love clients who appreciate the value of our work, and who are willing to invest in themselves.
+		section.faq-section
+			.container
+				.row
+					.col-md-12
+						h2.acc-head What is bober
+						.accordion
+							//tab
+							h3
+								i.fa.fa-question
+								|How we work
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+							//tab
+							h3
+								i.fa.fa-question
+								|What technologies do we use
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+							//tab
+							h3
+								i.fa.fa-question
+								|Our warranty
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+						//Next accordion
+						h2.acc-head Contract
+						.accordion
+							//tab
+							h3
+								i.fa.fa-question
+								|How we work
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+							//tab
+							h3
+								i.fa.fa-question
+								|What technologies do we use
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+							//tab
+							h3
+								i.fa.fa-question
+								|Our warranty
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+						//Next accordion
+						h2.acc-head Payment
+						.accordion
+							//tab
+							h3
+								i.fa.fa-question
+								|How we work
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+							//tab
+							h3
+								i.fa.fa-question
+								|What technologies do we use
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+							//tab
+							h3
+								i.fa.fa-question
+								|Our warranty
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+
+																	
+		//Section trigger
+		section.section-trigger.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.center
+							h2| Want to discuss your 
+								span| new project ?
+						.buttons-section.center
+							a(href="#",class='btn accent-btn large-btn') Start project
+				
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

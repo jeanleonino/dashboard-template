@@ -1,0 +1,167 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Creative Digital Agency Template
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body.sidenav
+		
+		.content-wrap-lfm
+			//-Header
+			header.top-nav.header-type-1.background-image(data-image='img/bg1blurm.jpg')
+				include html/_header-left-nav.jade
+
+			//- Slider page
+			include head/sliders/_slide-photo-video.jade
+			
+			//Portfolio
+			.container-full
+				.masonry-portfolio.background-image(data-image='img/bg1blurm.jpg')
+					
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-1.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-1.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-2.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-2.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-3.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-3.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-4.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-4.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-5.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-5.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-6.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-6.jpg', alt='image')
+
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-7.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-7.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-8.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-8.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-9.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-9.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-10.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-10.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-11.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-11.jpg', alt='image')
+	
+					// Start Block item
+					.col-md-4.col-sm-6.col-xs-6.masonry-item-pr
+						a(href="img/portfolio/f-12.jpg" class="wrap-ms-pr link-portfolio dh-container")
+							.bg-mask-pr.dh-overlay
+								.icon
+									i.pe-7s-search
+							img(src='img/portfolio/f-12.jpg', alt='image')
+			
+			//Map style - 2
+			#map.map-content(data-zoom="13" data-height="400" data-address="Konotop" data-address-details="Our location")
+
+			//Section contact with us
+			section#contact.section-contact-with-us.bg-dark-section.background-image(data-image='img/bg1blurm.jpg')
+				.container
+					.row
+						.col-md-8.col-md-push-2
+							.heading-title.small-heading.center
+								h2| Contact with me
+								p| Claritas est etiam processus dynamicus.
+					.row
+						.col-md-5
+							.contact-wrap
+								p.phone
+									i(class="fa fa-phone" aria-hidden="true")
+									| +58(667) 543 54 55
+								p.street
+									|359 CENTRAL MIRA STREET
+									br
+									|VATUTINA 79 / 99 UKRAINE
+								a(href="malito:" class="email")
+									i(class="fa fa-envelope-o" aria-hidden="true")
+									| Support@DOMIAN.COM
+								a(href="malito:" class="email")
+									i(class="fa fa-envelope-o" aria-hidden="true")
+									| Support@DOMIAN.COM
+						.col-md-5
+							form#contact-form.contact-form-white
+								input(type="text", name='Name' placeholder='Name')
+								input(type="text", name='Email' placeholder='Email *')
+								input(type="text", name='Phone' placeholder='Phone')
+								input(type="text", name='Subject' placeholder='Subject')
+								textarea(name="message", placeholder='Message *',cols="3", rows="5")
+								p#success.hidden.notify Your message has been send
+								p#error.hidden.notify Error sending message
+								input(class='btn',type="submit", value='Send message')
+			//- HTML5SHIFT
+			include components/_html5shiv.jade
+			//- Footer
+			include html/_footer-minimal.jade
+		//- Scripts
+		include html/_scripts.jade

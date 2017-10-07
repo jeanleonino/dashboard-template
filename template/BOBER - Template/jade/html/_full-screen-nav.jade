@@ -1,0 +1,51 @@
+.fullscreen-topnav.rotate.background-image(data-image='img/bg1.jpg')
+	// Start container
+	.container-fluid.height-half
+		.row.height-full.no-padding-bottom
+			.items.height-full
+
+				a(class='col-lg-3 col-md-6 col-sm-6 col-xs-12 height-full link',href="faq.html")
+					.item.table
+						.content-nav.table-cell
+							p| FAQ - page
+							h2| Need help ?
+
+				a(class='col-lg-3 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 height-full link ',href="services.html")
+					.item.table
+						.content-nav.table-cell
+							p| All services
+							h2| Our services
+
+				.col-lg-6.col-md-12.col-sm-12.col-xs-12.col-lg-pull-3.height-full.text-item
+					.item.table
+						.content-nav.table-cell
+							h3| Fact about us:
+							p| In 2018 we are Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+	// Start container
+	.container-fluid.height-half-60
+		.row.no-padding-bottom.height-full
+			.items.height-full
+				.col-lg-6.col-md-6.col-sm-12.col-xs-12.video-play.height-full
+					.video-section.table
+						.table-cell
+							a(class='icon-play anim-shadow',href="https://www.youtube.com/watch?v=lm4OJxGQm_E")
+								i.pe-7s-play
+							p| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+
+				.col-lg-6.col-md-6.col-sm-12.col-xs-12.form-full-screen.height-full
+					.content.table
+						.table-cell
+							h3| Start project:
+							form.contact-form-sub
+								input(type="text", name="Name" placeholder='Your Name')
+								input(type="text", name="Email" placeholder='Email *')
+								select(name="Servises", class='demo-default' id='selectize')
+									option(value="") Choose service:
+									option(value="Services") Services 1
+									option(value="Services 2") Services 2
+									option(value="Services 3") Services 3
+								textarea(name="Message", placeholder='Message *',cols="3", rows="5")
+								p.success-msg.hidden.notify Your order has been send
+								p.success-msg.hidden.notify Error sending order
+								input(class='btn',type="submit", value='Send message')
+	// End container

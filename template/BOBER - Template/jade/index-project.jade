@@ -1,0 +1,31 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Creative Digital Agency Template
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body.dark-load
+		
+		//-Header
+		include html/_header.jade
+		//- Slider page
+		include head/sliders/_slide-project.jade
+		//- Content page
+		include sections/_into-slider.jade
+		//- Content page
+		include html/_content.jade
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+
