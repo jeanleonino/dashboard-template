@@ -1,0 +1,43 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - 404
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		.slider#top
+			.wrap-header
+				// Start slide
+				.slide.bg-mask.background-image.full-vh(data-image='img/404.jpg')
+					.container-slide.vertical-align.center
+						.container
+							.row
+								.col-md-12
+									h1.heading-title-big 
+										| Page 
+										span 404
+									.description-slide
+										| This page does not exist, but you can go to 
+										span back.
+
+									.buttons-section
+										a(href="index.html",class=' btn dark-btn large-btn') Go to back
+			
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

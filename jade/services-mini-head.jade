@@ -1,0 +1,190 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Services
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		
+		// Start Content section
+		section.display-page.img-parallax.bg-mask.background-image(data-image='img/bgn12.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content
+							// heading title
+							h1| Services
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+		
+		//Section our services
+		section.section-our-services.bg-white-section#services
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.center
+							h2| Our 
+								span| services
+							.small-desd
+								| We create 
+								span| awesome stuff
+							p| The combination of beautiful and clean design, technology and user experience, give us big advantage in the market and differentiates our work.
+				.row
+					.item-service
+						.col-md-3.icon-service.bg-mask.background-image(data-image='img/bg1.jpg')
+							.small-i
+								i.pe-7s-global
+							.large-i
+								i.pe-7s-global
+						.col-md-9.content-service
+							h2 Web 
+								span development
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							hr
+							.buttons-section.left
+								a(href="service-single.html",class='btn white-btn') Get started
+				.row
+					.item-service
+						.col-md-3.icon-service.bg-mask.background-image(data-image='img/bg2.jpg')
+							.small-i
+								i.pe-7s-graph
+							.large-i
+								i.pe-7s-graph
+						.col-md-9.content-service
+							h2 Branding
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							hr
+							.buttons-section.left
+								a(href="service-single.html",class='btn white-btn') Get started
+				.row
+					.item-service
+						.col-md-3.icon-service.bg-mask.background-image(data-image='img/bg3.jpg')
+							.small-i
+								i.pe-7s-drop
+							.large-i
+								i.pe-7s-drop
+						.col-md-9.content-service
+							h2 Web 
+								span design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							hr
+							.buttons-section.left
+								a(href="service-single.html",class='btn white-btn') Get started
+				.row
+					.item-service
+						.col-md-3.icon-service.bg-mask.background-image(data-image='img/bg4.jpg')
+							.small-i
+								i.pe-7s-phone
+							.large-i
+								i.pe-7s-phone
+						.col-md-9.content-service
+							h2 Mobile apps 
+								span development
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							hr
+							.buttons-section.left
+								a(href="service-single.html",class='btn white-btn large-btn') Get started
+
+		//Section work progress
+		section.section-work-progress.background-image.bg-dark-section(data-image='img/bg1.jpg')
+			.container
+				.row
+					.col-md-3
+						.heading-title.small-heading.text-left
+							h2| Work 
+								span| progress
+							p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+					.col-md-3.col-sm-4
+						.icon-progress
+							i.pe-7s-comment
+							p| 1. Discuss
+					.col-md-3.col-sm-4
+						.icon-progress
+							i.pe-7s-display2
+							p| 2. Make
+					.col-md-3.col-sm-4
+						.icon-progress
+							i.pe-7s-like
+							p| 3. Product
+	
+		//Section chooce us acc
+		section.chooce-us-acc.bg-white-section.white-70.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-6
+						.heading-title.small-heading.text-left
+							h2| Why chooce  
+								span| us ?
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam. Aliquam elementum tellus non erat porttitor mollis. Morbi viverra sollicitudin nisl eu sodales.
+							p Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.
+					.col-md-6
+						.accordion
+							//tab
+							h3 
+								i.fa.fa-group
+								|We are proffesionals
+
+							div
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+							//tab
+
+							h3 
+								i.fa.fa-clock-o
+								|We are punctual
+							div
+								p Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+							//tab
+
+							h3
+								i.fa.fa-heart
+								|We are friendly
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+							//tab
+
+							h3 
+								i.fa.fa-codepen
+								|We are creative
+							div
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+
+		//Section trigger
+		section.section-trigger.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.center
+							h2| Like our 
+								span| services ?
+						.buttons-section.center
+							a(href="#",class='btn accent-btn large-btn') Start project
+
+		
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+
+

@@ -1,0 +1,294 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - service single
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		
+		// Start Content section
+		section.display-page.img-parallax.bg-mask.background-image(data-image='img/bg4.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content
+							// heading title
+							h1| Service - 
+								span single
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| We like to create a good and high-quality products. 
+									br 
+									| We love clients who appreciate the value of our work, and who are willing to invest in themselves.
+		
+		//Service content
+		section.service-single
+			.container
+				.row
+					.col-md-3
+						ul.services-list
+							li.active
+								a(href="#" title='Web development') Web development
+							li
+								a(href="#" title='Mobile apps') Mobile apps
+							li
+								a(href="#" title='Photographs') Photographs
+							li
+								a(href="#" title='WordPress') WordPress
+							li
+								a(href="#" title='Marketing') Marketing
+					.col-md-9 
+						.content-service-single
+							h2 Web development
+							p Installations are becoming more important, but if current trends continues under we seds ut should be looking to seds others solutions. Complete, comprehensive prefabrications off components is complicated because it is difficult ut too integrate water.
+					.col-md-5
+						img(src="img/ser1.jpg", class="img-responsive", alt="service")
+					.col-md-4
+						ul.list
+							li| Rich media banners
+							li| Audio production
+							li| Photography
+							li| Design
+							li| Content creation
+							li| Content audit
+							li| Project management
+							li| Technical requirements
+							li| Testing
+							li| and more...
+		
+		// Section about
+		section.background-image(data-image='img/pattern.png')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.left-text
+							h2| Working 
+								span| process
+							p| We realize what has to be done, and offer information about the project at every single stage. 
+								br
+								|We are ready to answer any questions you may have at any time.
+				.row
+					.col-md-4
+						.item-about.service-about
+							.icon
+								i.pe-7s-micro
+								.bg-icon
+									i.pe-7s-micro
+							.content
+								h3|Interview, estimates  
+									span
+										br
+										| & project contract
+								ul.list
+									li| Interview
+									li| Cost estimation
+									li| Project contract
+					.col-md-4
+						.item-about.service-about
+							.icon
+								i.pe-7s-note
+								.bg-icon
+									i.pe-7s-note
+							.content
+								h3| Prototyping 
+									span
+										br
+										|& design
+								ul.list
+									li| Project analytics
+									li| User flows and wireframes
+									li| Design concept
+
+					.col-md-4
+						.item-about.service-about
+							.icon
+								i.pe-7s-rocket
+								.bg-icon
+									i.pe-7s-rocket
+							.content
+								h3|Technical 
+									span
+										br
+										|implementation
+								ul.list
+									li| Coding and programming
+									li| User interface animation
+									li| Testing
+									li| Launch
+		
+		//Section what we do
+		section.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-6
+						.heading-title.small-heading.text-left
+							h2| What we  
+								span| do
+							p
+								| We like to create a good and high-quality products. 
+								br 
+								| We love clients who appreciate the value of our work, and who are willing to invest in themselves.
+				.row
+					.col-md-6
+						img(src="img/ser.jpg", class="img-responsive", alt="")
+					.col-md-6
+						.accordion
+							//tab
+							h3 
+								i.fa.fa-adjust
+								|Responsive design
+
+							div
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+							//tab
+
+							h3 
+								i.fa.fa-css3
+								|Template development
+							div
+								p Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+							//tab
+
+							h3
+								i.fa.fa-bullhorn
+								|Rich media banners
+							div
+								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+							//tab
+
+							h3 
+								i.fa.fa-code
+								|Frontend development
+							div
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+							//tab
+
+							h3 
+								i.fa.fa-cogs
+								|Backend development
+							div
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+	
+		//Prices
+		section.bg-white-section.white-70.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.center
+							h2| Our 
+								span| prices
+							.small-desd
+								| Prices 
+								span| mounce
+							p| The combination of beautiful and clean design, technology and user experience, give us big advantage in the market and differentiates our work.
+				.row
+					.col-md-3.col-sm-6
+						.item-price
+							.head
+								.name-wrap
+									h2 Starter package									
+								.price-wrap
+									p $999
+									span.per-mn Per Mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+					.col-md-3.col-sm-6
+						.item-price
+							.head
+								.name-wrap
+									h2 Plus package									
+								.price-wrap
+									p $1200
+									span.per-mn per mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+					.col-md-3.col-sm-6
+						.item-price.most-price
+							.head
+								.name-wrap
+									h2 Professional package									
+								.price-wrap
+									p $1800
+									span.per-mn per mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+					.col-md-3.col-sm-6
+						.item-price
+							.head
+								.name-wrap
+									h2 Premium package									
+								.price-wrap
+									p $2499
+									span.per-mn per mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+		
+		//Section trigger
+		section.section-trigger.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.center
+							h2| Like our 
+								span| service ?
+						.buttons-section.center
+							a(href="#",class='btn accent-btn large-btn') Start project
+
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

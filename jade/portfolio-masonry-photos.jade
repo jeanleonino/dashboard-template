@@ -1,0 +1,157 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Masonry
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		.slider#top
+			.wrap-header.intro
+				// Start slide
+				.slide.bg-mask.background-image.full-vh(data-image='img/bgn3.jpg')
+					.container-slide.vertical-align.center.small-text
+						.container
+							.row
+								.col-md-12
+									h1.heading-title-big 
+										|Portfolio masonry photos
+									.description-slide
+										| We create beautiful design & great user experience, to supply the best digital products for our clients. 
+										br
+										|As proof of this, here are our projects.
+									.buttons-section
+										a(href="#portfolio",class='smooth-scroll btn dark-btn large-btn') watch projects
+				//Buttont down
+				a(href="#portfolio", class='smooth-scroll btn-down')
+					i(class="fa fa-angle-down" aria-hidden="true")
+		//Section our some work
+		section#portfolio.section-portfolio.bg-white-section.background-image(data-image='img/bg1.jpg')
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.center
+							h2| Our some 
+								span| work
+							.small-desd
+								| We create 
+								span| awesome stuff
+							p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+			.container
+				.row
+					//Portfolio
+					.portfolio.masonry-portfolio.portfolio-pd
+						
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-1.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-1.jpg', alt='image')
+						
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-2.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-2.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-3.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-3.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-4.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-4.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-5.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-5.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-6.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-6.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-7.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-7.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-8.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-8.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-9.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-9.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-10.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-10.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-11.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-11.jpg', alt='image')
+										
+						// Start Block item
+						.col-md-4.item-portfolio
+							a(href="img/portfolio/f-12.jpg" class="wrap-ms-pr link-portfolio dh-container")
+								.bg-mask-pr.dh-overlay
+									.icon
+										i.pe-7s-search
+								img(src='img/portfolio/f-12.jpg', alt='image')
+				
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

@@ -1,0 +1,54 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Creative Digital Agency Template
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body.sidenav
+		
+		.content-wrap-lfm
+			//-Header
+			header.top-nav.header-type-1.background-image(data-image='img/bg1blur.jpg')
+				include html/_header-left-nav.jade
+	
+			section#portfolio.pad-t-0.section-portfolio.bg-white-section.background-image(data-image='img/bg1.jpg')
+				.container
+					//- .row
+					//- 	.col-md-8.col-md-push-2
+					//- 		.heading-title.center
+					//- 			h2| Our some 
+					//- 				span| work
+					//- 			.small-desd
+					//- 				| We create 
+					//- 				span| awesome stuff
+					//- 			p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+					//- 		.controls-portfolio.center
+					//- 			ul#control-portfolio.text-center
+					//- 				li#liact.filter.select-cat(data-filter='*', class='active') All
+					//- 				li.filter(data-filter='.category-2') Design
+					//- 				li.filter(data-filter='.category-3') Mobile apps
+					//- 				li.filter(data-filter='.category-4') Video
+					//- 				li.filter(data-filter='.category-5') Photography
+				.container-fluid
+					.row
+						//Portfolio
+						include components/_portfolio-col-3.jade
+						//Content portfolio
+						include components/_portfolio-content.jade
+					
+				
+
+			//- HTML5SHIFT
+			include components/_html5shiv.jade
+			//- Footer
+			include html/_footer-minimal.jade
+		//- Scripts
+		include html/_scripts.jade

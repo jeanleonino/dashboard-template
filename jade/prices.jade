@@ -1,0 +1,143 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Prices
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		
+		// Start Content section
+		section.display-page.img-parallax.bg-mask.background-image(data-image='img/bg1.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content
+							// heading title
+							h1| Our 
+								span prices
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+			
+		section.bg-white-section.white-70.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.center
+							h2| Web 
+								span| development
+							.small-desd
+								| Prices 
+								span| mounce
+							p| The combination of beautiful and clean design, technology and user experience, give us big advantage in the market and differentiates our work.
+				.row
+					.col-md-3
+						.item-price
+							.head
+								.name-wrap
+									h2 Starter package									
+								.price-wrap
+									p $999
+									span.per-mn Per Mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+					.col-md-3
+						.item-price
+							.head
+								.name-wrap
+									h2 Plus package									
+								.price-wrap
+									p $1200
+									span.per-mn per mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+					.col-md-3
+						.item-price.most-price
+							.head
+								.name-wrap
+									h2 Professional package									
+								.price-wrap
+									p $1800
+									span.per-mn per mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+					.col-md-3
+						.item-price
+							.head
+								.name-wrap
+									h2 Premium package									
+								.price-wrap
+									p $2499
+									span.per-mn per mounce
+							.body
+								ul
+									li Responsive( Mobile Website)
+									li Image slider (Animation)
+									li 1 Year Domain Free
+									li 1 Year Hosting Free
+									li Form Submission
+									li Google Map
+									li 24/7 Support
+									li
+										a(href='#' class='btn') Start project
+
+		//Section trigger
+		section.section-trigger.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.center
+							h2| Want to discuss your 
+								span| new project ?
+						.buttons-section.center
+							a(href="#",class='btn accent-btn large-btn') Start project
+				
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

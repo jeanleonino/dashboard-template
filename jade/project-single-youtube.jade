@@ -1,0 +1,131 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Portfolio single youtube
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body.single-project
+		
+		//-Header
+		include html/_header.jade
+		//Start head slide
+		.slider#top
+			.wrap-header.intro
+				// Start slide
+				.slide.bg-mask.background-image.full-vh(data-image='img/bgn11.jpg')
+					.container-slide.vertical-align.center.small-text
+						.container
+							.row
+								.col-md-12
+									h1.heading-title-big 
+										| Youtube
+									.description-slide
+										| Milness is a modern and simple WordPress theme. 
+										br
+										|The main purpose for the WordPress theme is to showcase your mobile or web application
+									.buttons-section
+										a(href="#into",class='smooth-scroll btn dark-btn large-btn') watch project
+									
+			a(href="#into", class='smooth-scroll btn-down')
+				i(class="fa fa-angle-down" aria-hidden="true")
+		//End head slide
+		.head-project#into
+			.container
+				.row
+					.col-md-6
+						.video-iframe
+							iframe(height="350" src="https://www.youtube.com/embed/DH6d8-fTsww" allowfullscreen) 
+
+					.col-md-6
+						.content-project
+							h3.title-project Project 
+								span title
+							p
+								| Milness – is a modern and simple HTML template. The main purpose for the HTML template is to showcase your mobile or web application, with an overall aesthetic that entices users explore functionality and features of your application.
+							hr
+							h3 Detalis
+							ul.list-project
+								li
+									b Client: 
+									| Themeforest
+								li
+									b Date: 
+									| 23th, April, 2017
+								li
+									b Tags: 
+									| android, app, app store, application, landing page, mobile
+								li
+									b Live: 
+									a(href="#") View project
+										i(class="fa fa-external-link" aria-hidden="true")
+				hr
+		section#about.about-us
+			.container
+				.row
+					.col-md-4
+						.item-about
+							.icon
+								i.pe-7s-light
+								.bg-icon
+									i.pe-7s-light
+							.content
+								h3|1. Case studio
+								p| Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum.
+					.col-md-4
+						.item-about
+							.icon
+								i.pe-7s-rocket
+								.bg-icon
+									i.pe-7s-rocket
+							.content
+								h3|2. Result
+								p| Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum.
+					.col-md-4
+						.item-about
+							.icon
+								i.pe-7s-plugin
+								.bg-icon
+									i.pe-7s-plugin
+							.content
+								h3|3. Experience
+								p| Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum.
+		//Project hight
+		section.project-hight.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.center
+							h2| Project in high resolution
+					.col-md-12
+						.video-iframe
+							iframe(height="650" src="https://www.youtube.com/embed/DH6d8-fTsww" allowfullscreen)
+		
+		//- Related projects include
+		include html/_related-projects.jade
+
+		//Section trigger
+		section.section-trigger.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.center
+							h2| Like our creative 
+								span| work ?
+						.buttons-section.center
+							a(href="#",class='btn accent-btn large-btn') Start project
+
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

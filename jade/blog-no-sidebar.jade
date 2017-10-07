@@ -1,0 +1,183 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Blog line
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body.blog-page
+		
+		//-Header
+		include html/_header.jade
+		
+		// Start Content section
+		section.display-page.img-parallax.bg-mask.background-image(data-image='img/bgn17.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content
+							// heading title
+							h1| Blog line
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+		//End content section
+
+		.container.single-blog
+			.row
+				.col-md-12.single-post
+					.post.type-post.format-image.sticky
+						.post-thumb
+							a.img-wrap(href='blog-single.html', title='New features released')
+								img(src='img/blog1.jpg', alt='blog-3')
+						//Start post data
+						.post-data
+							p.autor
+								a(href="#") by Erik Momsen
+							p.data
+								a(href="#") 13 October 2018
+							p.category
+								a(href="#") Financial Service
+							p.comments
+								| 55 Comments
+						//End post data
+						.content
+							h3
+								a(href='blog-single.html', title='New features released')
+									| Default post with image.
+							p
+								| Installations are becoming more importants, but if current trends continue we seds ut should be looking to seds ut others solutions. Complete, comprehensive prefabrication of components is complicated because it is difficult ut to integrate water, electricity ut and heating systems in prefabricated elements t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+							a.btn.btn-default(href='blog-single.html', title='Single post') Read more
+							span.format image
+
+					// Start post
+					.post.type-post.format-gallery
+						.post-thumb
+							.slider-wrap.gallery-slide
+								.slider-portfolio-single
+									.slide
+										img(src='img/blog2.jpg', class='img-responsive', alt='work')
+									.slide
+										img(src='img/blog3.jpg', class='img-responsive', alt='work')
+									.slide
+										img(src='img/blog4.jpg', class='img-responsive', alt='work')
+									.slide
+										img(src='img/blog1.jpg', class='img-responsive', alt='work')
+								// Strat Control carousel
+								.control-portfolio-slider.prev-next-block-rotate.opacity-control
+									.wrap-prev
+										.prev
+											i(class="fa fa-angle-left" aria-hidden="true")
+									.wrap-next
+										.next
+											i(class="fa fa-angle-right" aria-hidden="true")
+								//Control sliders
+								.dots-control-carousel.dots-control-portfolio-slider
+						//Start post data
+						.post-data
+							p.autor
+								a(href="#") by Erik Momsen
+							p.data
+								a(href="#") 13 October 2018
+							p.category
+								a(href="#") Financial Service
+							p.comments
+								| 21 Comments
+						//End post data
+						.content
+							h3
+								a(href='blog-single-gallery.html', title='New features released')
+									| Default post with gallery.
+							p
+								| Installations are becoming more importants, but if current trends continue we seds ut should be looking to seds ut others solutions. Complete, comprehensive prefabrication of components is complicated because it is difficult ut to integrate water, electricity ut and heating systems in prefabricated elements t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+							a.btn.btn-default(href='blog-single-gallery.html', title='Single post') Read more
+							span.format image
+					// end post
+
+					// Start post
+					.post.type-post.format-video
+						.post-thumb
+							.video-post
+								iframe(height="431" src="https://www.youtube.com/embed/DH6d8-fTsww" allowfullscreen)
+						//Start post data
+						.post-data
+							p.autor
+								a(href="#") by Erik Momsen
+							p.data
+								a(href="#") 13 October 2018
+							p.category
+								a(href="#") Financial Service
+							p.comments
+								| 5 Comments
+						//End post data
+						.content
+							h3
+								a(href='blog-single-youtube.html', title='New features released')
+									| Default post with YouTube.
+							p
+								| Installations are becoming more importants, but if current trends continue we seds ut should be looking to seds ut others solutions. Complete, comprehensive prefabrication of components is complicated because it is difficult ut to integrate water, electricity ut and heating systems in prefabricated elements t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+							a.btn.btn-default(href='blog-single-youtube.html', title='Single post') Read more
+							span.format image
+					// end post
+
+					// Start post
+					.post.type-post.format-video
+						.post-thumb
+							.video-post
+								iframe(src="https://player.vimeo.com/video/124749716?color=1c58ed&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0" height="431" allowfullscreen="")
+						//Start post data
+						.post-data
+							p.autor
+								a(href="#") by Erik Momsen
+							p.data
+								a(href="#") 13 October 2018
+							p.category
+								a(href="#") Financial Service
+							p.comments
+								| 43 Comments
+						//End post data
+						.content
+							h3
+								a(href='blog-single-vimeo.html', title='New features released')
+									| Default post with Vimeo.
+							p
+								| Installations are becoming more importants, but if current trends continue we seds ut should be looking to seds ut others solutions. Complete, comprehensive prefabrication of components is complicated because it is difficult ut to integrate water, electricity ut and heating systems in prefabricated elements t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+							a.btn.btn-default(href='blog-single-vimeo.html', title='Single post') Read more
+							span.format image
+					// end post
+
+				// end single post
+			// end row
+		// end container
+
+		// Start pagination
+		.pagination-btns
+			.container
+				.row
+					.col-md-12.col-sm-12
+						nav.navigation.pagination
+							h2.screen-reader-text Posts navigation
+							.nav-links
+								span.page-numbers.current 1
+								a.page-numbers(href='#') 2
+								a.next.page-numbers(href='#') Next
+		// end pagination
+
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

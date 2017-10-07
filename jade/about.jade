@@ -1,0 +1,414 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - About
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+
+		// Start Content section
+		section.display-page.img-parallax.bg-mask.background-image(data-image='img/bg1.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content
+							// heading title
+							h1| About 
+								span us
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+		
+		//Start about section
+		section#about.about-us
+			.container
+				.row
+					.col-md-4
+						.item-about
+							.icon
+								i.pe-7s-target
+								.bg-icon
+									i.pe-7s-target
+							.content
+								h3|Web 
+									span
+										| development
+								p| Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum.drerit elit sed, condimentum magna. Suspendisse imperdiet purus vel drerit elit sed, condimentum magna. Suspendisse imperdiet purus vel
+					.col-md-4
+						.item-about
+							.icon
+								i.pe-7s-help2
+								.bg-icon
+									i.pe-7s-help2
+							.content
+								h3|context 
+									span
+										| advertising
+								p| Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum.drerit elit sed, condimentum magna. Suspendisse imperdiet purus vel drerit elit sed, condimentum magna. Suspendisse imperdiet purus vel
+					.col-md-4
+						.item-about
+							.icon
+								i.pe-7s-light
+								.bg-icon
+									i.pe-7s-light
+							.content
+								h3|Internet 
+									span
+										| marketing
+								p| Praesent sodales, quam vitae gravida interdum, ex mi bibendum enim, sit amet tristique mi quam vel odio. Donec non nunc condimentum.drerit elit sed, condimentum magna. Suspendisse imperdiet purus vel drerit elit sed, condimentum magna. Suspendisse imperdiet purus vel
+		
+		//Start WHO WE ARE section
+		section.whe-we-are.background-image(data-image='img/bg1.jpg')
+			.container-fluid
+				.row
+					.col-md-6.left-full
+						.center-all
+							.buttons-section
+								a(href="portfolio-masonry.html", class='btn white-btn large-btn') View our works
+					.col-md-6.right-full
+						.center-all
+							.heading-title.small-heading.center.left-text
+								h2| Who we 
+									span| are
+								p| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+									br
+									br
+									| exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volu
+		
+		//Section our skills
+		section.section-our-skills.bg-white-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-6
+						.heading-title.small-heading.center.left-text
+							h2| Our
+								span|  skills
+							p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+				.row
+					.col-md-7
+						.tabs.tabs-default
+							ul
+								li
+									a(href='#tabs-d1') CSS&HTML
+										
+								li
+									a(href='#tabs-d2') JavaScript
+			
+								li
+									a(href='#tabs-d3') Wordpress
+
+								li
+									a(href='#tabs-d4') eCommerce
+								li
+									a(href='#tabs-d5') Opencart
+
+							#tabs-d1
+								p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+							#tabs-d2
+								p There are many variations of passages m um ilable, but the majority have suffered alteration in some form, amr sonr bangla variations of passages oorpsum available, but the majority.
+								p There are many variations of passages m um ilable, but the majority have suffered alteration in some form, amr sonr bangla variations of passages oorpsum available, but the majority.
+							#tabs-d3
+								p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+							#tabs-d4
+								p There are many variations of passages m um ilable, but the majority have suffered alteration in some form, amr sonr bangla variations of passages oorpsum available, but the majority.
+								p There are many variations of passages m um ilable, but the majority have suffered alteration in some form, amr sonr bangla variations of passages oorpsum available, but the majority.
+							#tabs-d5
+								p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+					.col-md-5
+						//Start skills wrap
+						.skillbars
+							.skillbar.clearfix(data-percent='40%')
+								.skillbar-title
+									span jQuery
+								.skillbar-bar
+								.skill-bar-percent 40%
+							// End Skill Bar
+							.skillbar.clearfix(data-percent='80%')
+								.skillbar-title
+									span HTML&CSS
+								.skillbar-bar
+								.skill-bar-percent 80%
+							// End Skill Bar
+							.skillbar.clearfix(data-percent='90%')
+								.skillbar-title
+									span WordPress
+								.skillbar-bar
+								.skill-bar-percent 90%
+							// End Skill Bar
+							.skillbar.clearfix(data-percent='60%')
+								.skillbar-title
+									span OpenCart
+								.skillbar-bar
+								.skill-bar-percent 60%
+							// End Skill Bar
+							.skillbar.clearfix(data-percent='97%')
+								.skillbar-title
+									span PHP
+								.skillbar-bar
+								.skill-bar-percent 97%
+							// End Skill Bar
+						//End skills wrap
+		
+		//Section work progress
+		section.section-work-progress.background-image.bg-dark-section(data-image='img/bg1.jpg')
+			.container
+				.row
+					.col-md-3
+						.heading-title.small-heading.text-left
+							h2| Work 
+								span| progress
+							p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+					.col-md-3.col-sm-4
+						.icon-progress
+							i.pe-7s-comment
+							p| 1. Discuss
+					.col-md-3.col-sm-4
+						.icon-progress
+							i.pe-7s-display2
+							p| 2. Make
+					.col-md-3.col-sm-4
+						.icon-progress
+							i.pe-7s-like
+							p| 3. Product
+		
+		//Section our team
+		section.section-team.bg-white-section.background-image(data-image='img/bg1.jpg')
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.center
+							h2| Team
+							.small-desd
+								| Who
+								span|  we are
+							p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+				.row
+					//Start item team
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						.item-team
+							.img-wrap
+								img(class="img-responsive",src="img/team1.jpg", alt="img")
+								.mask-info
+								//Start social links
+								ul.social-links
+									li
+										a(href='#')
+											i.fa.fa-facebook
+									li
+										a(href='#')
+											i.fa.fa-twitter
+									li
+										a(href='#')
+											i.fa.fa-skype
+									li
+										a(href='#')
+											i.fa.fa-linkedin
+								//End social links
+							h2 David Vigo Michel
+							span Founder & CEO
+							p The MD of Statistic Consulting, he has been the captain of his team..
+					//Start item team
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						.item-team
+							.img-wrap
+								img(class="img-responsive",src="img/team2.jpg", alt="img")
+								.mask-info
+								//Start social links
+								ul.social-links
+									li
+										a(href='#')
+											i.fa.fa-facebook
+									li
+										a(href='#')
+											i.fa.fa-twitter
+									li
+										a(href='#')
+											i.fa.fa-skype
+									li
+										a(href='#')
+											i.fa.fa-linkedin
+								//End social links
+							h2 Rebecca Garza
+							span Chief Finance Officer
+							p She managed to bring the company as well as Statistic Consulting
+					//Start item team
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						.item-team
+							.img-wrap
+								img(class="img-responsive",src="img/team3.jpg", alt="img")
+								.mask-info
+								//Start social links
+								ul.social-links
+									li
+										a(href='#')
+											i.fa.fa-facebook
+									li
+										a(href='#')
+											i.fa.fa-twitter
+									li
+										a(href='#')
+											i.fa.fa-skype
+									li
+										a(href='#')
+											i.fa.fa-linkedin
+								//End social links
+							h2 Stepthen Adams
+							span Administrator & Developer
+							p He is an Company technical adviser & business developer
+					//Start item team
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						.item-team
+							.img-wrap
+								img(class="img-responsive",src="img/team4.jpg", alt="img")
+								.mask-info
+								//Start social links
+								ul.social-links
+									li
+										a(href='#')
+											i.fa.fa-facebook
+									li
+										a(href='#')
+											i.fa.fa-twitter
+									li
+										a(href='#')
+											i.fa.fa-skype
+									li
+										a(href='#')
+											i.fa.fa-linkedin
+								//End social links
+							h2 Gina Fernando
+							span Manager of Marketing
+							p She is a marketing manager of our comapny, she bring to high..
+					//End item team
+		
+		//Section testimonials
+		section.section-testimonials.bg-dark-section.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-8.col-md-push-2
+						.heading-title.small-heading.center
+							h2| Customers  
+								span| love us
+							p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+				.row
+					.testimonials-items
+						// Start Block item
+						.col-md-4
+							.item-testimonials
+								img(src='img/ava.jpg', alt='photo')
+								p
+									| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								span.name Alex Rezvova
+								span.person Designer, Company name
+						// Block item
+						.col-md-4
+							.item-testimonials
+								img(src='img/ava2.jpg', alt='photo')
+								p
+									| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								span.name Jacob Kai
+								span.person Creative Director, Company name
+						// Block item
+						.col-md-4
+							.item-testimonials
+								img(src='img/ava3.jpg', alt='photo')
+								p
+									| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								span.name Albin Erlend
+								span.person Programer, Company name
+						// Block item
+						.col-md-4
+							.item-testimonials
+								img(src='img/ava3.jpg', alt='photo')
+								p
+									| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
+								span.name Albin Erlend
+								span.person Programer, Company name
+			
+						// End Block item
+				
+				// Dots control carousel
+				.dots-control-carousel#dots-control-testimonials
+			// Strat Control carousel
+			#control-customers.prev-next-block-rotate
+				.wrap-prev
+					.prev
+						i(class="fa fa-angle-left" aria-hidden="true")
+				.wrap-next
+					.next
+						i(class="fa fa-angle-right" aria-hidden="true")
+		
+		//Section our clients
+		.our-clients
+			.container
+				.row
+					#clients-carousel.clients-carousel
+						.col-md-2
+							.item-carousel
+								img(src="img/part1.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part2.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part3.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part4.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part5.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part1.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part4.png", alt="logo")
+						.col-md-2
+							.item-carousel
+								img(src="img/part3.png", alt="logo")
+			// Strat Control carousel
+			#control-clients.prev-next-block-rotate
+				.wrap-prev
+					.prev
+						i(class="fa fa-angle-left" aria-hidden="true")
+				.wrap-next
+					.next
+						i(class="fa fa-angle-right" aria-hidden="true")
+
+		//Section trigger
+		section.section-trigger.bg-white-section.white-70.background-image(data-image='img/bg3.jpg')
+			.container
+				.row
+					.col-md-12
+						.heading-title.small-heading.center
+							h2| Want to discuss your 
+								span| new project ?
+						.buttons-section.center
+							a(href="#",class='btn accent-btn large-btn') Start project
+		
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

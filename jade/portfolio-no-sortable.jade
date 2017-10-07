@@ -1,0 +1,52 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Portfolio no sortable
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body
+		
+		//-Header
+		include html/_header.jade
+		.slider#top
+			.wrap-header.intro
+				// Start slide
+				.slide.bg-mask.background-image.full-vh(data-image='img/bgn3.jpg')
+					.container-slide.vertical-align.center.small-text
+						.container
+							.row
+								.col-md-12
+									h1.heading-title-big 
+										|take a look at our projects
+									.description-slide
+										| We create beautiful design & great user experience, to supply the best digital products for our clients. 
+										br
+										|As proof of this, here are our projects.
+									.buttons-section
+										a(href="#portfolio",class='smooth-scroll btn dark-btn large-btn') watch projects
+				//Buttont down
+				a(href="#portfolio", class='smooth-scroll btn-down')
+					i(class="fa fa-angle-down" aria-hidden="true")
+		//Section our some work
+		section.section-portfolio.padding-0#portfolio
+			.container-fluid
+				.row
+					//Portfolio
+					include components/_portfolio.jade
+					//Content portfolio
+					include components/_portfolio-content.jade
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+

@@ -1,0 +1,253 @@
+doctype html
+html(lang='en', class="no-js")
+	head
+		meta(charset='utf-8')
+
+		title BOBER - Blog single post
+		meta(name='description', content='')
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(property='og:image', content='path/to/image.jpg')
+		//- Head
+		include html/_head.jade
+
+	body.blog-page
+		
+		//-Header
+		include html/_header.jade
+		
+		// Start Content section
+		section.display-page.img-parallax.bg-mask.background-image(data-image='img/bgn1.jpg')#top
+			.container
+				.row
+					.col-md-12
+						.content.center
+							// heading title
+							h1| Single Detail Page
+							// horizontal line
+							span.horizontal-line
+							span
+							// description slider
+							.description
+								p
+									| Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+		//End content section
+
+		.container.single-blog.right-sidebar
+			.row
+				#sidebar.col-md-3.col-sm-3.col-md-push-9.col-sm-push-9
+					form.search-form(role='search', method='get', action='#')
+						label
+							span.screen-reader-text Search for:
+							input.search-field(type='search', placeholder='Search …', value='', name='s')
+						input.search-submit(type='submit', value='Search')
+					h4 Categories
+					ul
+						li.cat-item
+							a(href='#') Android
+						li.cat-item
+							a(href='#') Design
+						li.cat-item
+							a(href='#') iOS
+						li.cat-item
+							a(href='#') Mobile app
+						li.cat-item
+							a(href='#') Uncategorized
+						li.cat-item
+							a(href='#') Windows
+					h4 Categories
+					ul
+						li
+							a(href='#') October 2015
+						li
+							a(href='#') July 2010
+						li
+							a(href='#') February 2010
+					h4 Tags
+					.tagcloud
+						a(href='#') Android
+						a(href='#') Company
+						a(href='#') Customer service
+						a(href='#') Design
+						a(href='#') Development
+						a(href='#') Features
+						a(href='#') In the news
+						a(href='#') iOS
+						a(href='#') Watch
+						a(href='#') Windows
+					h4 Social
+					//Start social links
+					ul.social-links
+						li
+							a(href='#')
+								i.fa.fa-facebook
+						li
+							a(href='#')
+								i.fa.fa-twitter
+						li
+							a(href='#')
+								i.fa.fa-skype
+						li
+							a(href='#')
+								i.fa.fa-linkedin
+				.col-md-8.col-sm-8.col-md-pull-3.col-sm-pull-3.single-post
+					article.post.type-post.format-image
+						.post-thumb
+							img(src='img/blog1.jpg', alt='blog-3')
+						//Start post data
+						.post-data
+							p.autor
+								a(href="#") by Erik Momsen
+							p.data
+								a(href="#") 13 October 2018
+							p.category
+								a(href="#") Financial Service
+							p.comments
+								| 55 Comments
+						//End post data
+						.content
+							h2
+								| Default post with image.
+							p
+								| Installations are becoming more important, but if current trends continues under we seds ut should be looking to seds others solutions. Complete, comprehensive prefabrications off components is complicated because it is difficult ut too integrate water, electricity ut and heating uts systems in elements is a long established but if currents trends continue seds we should be looking too other solutions comprehensive seds prefabrication of components our off complicated because it is difficult to integrate water, electricity and heatings systems in prefabricated elements so seds the entires system has to be completed in situe. Another company disadvantage is that the installations
+
+							p
+								| Current trends continues under we seds ut should be looking to seds others solutions sed, Complete, comprehensive prefabrications off components is complicated because it is difficult ut too integrated water, electricity ut and heatings uts systems in elements is a long established but if currents trends continue seds we should be looking too other our solutions comprehensive seds prefabrication of components our off complicated.
+						hr
+						.share-post
+							h4 Did You Like This Post? Share it :
+							ul.share-post-links
+								li
+									a(href="#" title="Share on Facebook")
+										i.fa.fa-facebook
+								li
+									a(href="#" title="Tweet this")
+										i.fa.fa-twitter
+								li
+									a(href="#" title="Share on VK")
+										i.fa.fa-vk
+								li
+									a(href="#" title="Share on Dribbble")
+										i.fa.fa-dribbble
+								li
+									a(href="#" title="Share on Pinterest")
+										i.fa.fa-pinterest
+						hr
+						.row
+							.col-md-12
+								.author-bio
+									.col-md-2.profile-img
+										span.dark-hex
+											img.avatar.avatar-90(alt='avatar', src='img/ava3.jpg')
+									.col-md-10.author-info
+										h3.author-title Written Brainiak
+										p.author-description
+											| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					#comments.comments-area.comments
+						.small-heading.text-left
+							h2 6 comments 
+						ul.comment-list
+							li.row
+								.col-md-2.col-sm-2
+									img.avatar.avatar-80.photo(alt='alt', src='img/ava2.jpg')
+								.col-md-10.col-sm-10
+									p.user
+										| admin 
+										span
+											a.comment-reply-link(rel='nofollow', href='#', aria-label='Reply to admin') Reply
+									p.info October 13, 2015 at 2:09 pm 
+									p Hello!
+							ul.children
+								li.row
+									.col-md-2.col-sm-2
+										img.avatar.avatar-80.photo(alt='alt', src='img/ava2.jpg')
+									.col-md-10.col-sm-10
+										p.user
+											| admin 
+											span
+												a.comment-reply-link(rel='nofollow', href='#', aria-label='Reply to admin') Reply
+										p.info October 13, 2015 at 2:09 pm 
+										p
+											| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius!
+								ul.children
+									li.row
+										.col-md-2.col-sm-2
+											img.avatar.avatar-80.photo(alt='alt', src='img/ava2.jpg')
+										.col-md-10.col-sm-10
+											p.user
+												| admin 
+												span
+													a.comment-reply-link(rel='nofollow', href='#', aria-label='Reply to admin') Reply
+											p.info October 13, 2015 at 2:09 pm 
+											p
+												| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.!
+									li.row
+										.col-md-2.col-sm-2
+											img.avatar.avatar-80.photo(alt='alt', src='img/ava2.jpg')
+										.col-md-10.col-sm-10
+											p.user
+												| admin 
+												span
+													a.comment-reply-link(rel='nofollow', href='#', aria-label='Reply to admin') Reply
+											p.info October 13, 2015 at 2:09 pm 
+											p
+												| Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.!
+								li.row
+									.col-md-2.col-sm-2
+										img.avatar.avatar-80.photo(alt='alt', src='img/ava2.jpg')
+									.col-md-10.col-sm-10
+										p.user
+											| admin 
+											span
+												a.comment-reply-link(rel='nofollow', href='#', aria-label='Reply to admin') Reply
+										p.info October 13, 2015 at 2:09 pm 
+										p
+											| Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius!
+							li.row
+								.col-md-2.col-sm-2
+									img.avatar.avatar-80.photo(alt='alt', src='img/ava2.jpg')
+								.col-md-10.col-sm-10
+									p.user
+										| admin 
+										span
+											a.comment-reply-link(rel='nofollow', href='#', aria-label='Reply to admin') Reply
+									p.info October 13, 2015 at 2:09 pm 
+									p
+										| Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.!
+						// Start comment rospond
+						.comment-respond
+							.row
+								.col-md-12
+									.small-heading.text-left
+										h2 Leave a Reply 
+										p Your email address will not be published. Required fields are marked *
+							.row
+								form(action="#").contact-form-white
+									.col-md-12
+										textarea(name="message", placeholder='Message *',cols="3", rows="5")
+									.col-md-4
+										input(type="text", placeholder='Name *')
+									.col-md-4
+										input(type="text", placeholder='Email *')
+									.col-md-4
+										input(type="text", placeholder='Web site')
+									.col-md-12
+										input(class='btn',type="submit", value='Post comment')
+						// end comment rospond
+					// end comment
+
+
+					
+
+				// end single post
+			// end row
+		// end container
+
+		//- HTML5SHIFT
+		include components/_html5shiv.jade
+		//- Footer
+		include html/_footer.jade
+		//- Scripts
+		include html/_scripts.jade
+
