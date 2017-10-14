@@ -35,7 +35,7 @@ gulp.task('styles', function () {
   // .pipe(rename({suffix: '.min', prefix : ''}))
   .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
   // .pipe(minifycss())
-  .pipe(gulp.dest('app/css'))
+  .pipe(gulp.dest('src/css'))
   .pipe(browserSync.stream());
 });
 

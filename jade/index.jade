@@ -1,14 +1,15 @@
 doctype html
-html(lang='en', class="no-js")
+html(lang='pt-BR', class="no-js")
 	head
 		meta(charset='utf-8')
 
-		title BOBER - Creative Digital Agency Template
+		title Cognitiving
 		meta(name='description', content='')
 
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		meta(property='og:image', content='path/to/image.jpg')
+		script(src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js")
 		//- Head
 		include html/_head.jade
 
@@ -17,7 +18,7 @@ html(lang='en', class="no-js")
 		//-Header
 		include html/_header.jade
 		//- Slider page
-		include head/sliders/_fixed-image.jade
+		include head/sliders/_slide-canvas.jade
 		//- Content page
 		include sections/_into-slider.jade
 		//- Content page

@@ -777,8 +777,8 @@ section#contact.section-contact-with-us.bg-dark-section.background-image(data-im
 		.row
 			.col-md-8.col-md-push-2
 				.heading-title.small-heading.center
-					h2| Contact 
-						span| with us
+					h2| Contato 
+						span| us
 					p| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
 		.row
 			.col-md-6
@@ -813,13 +813,14 @@ section#contact.section-contact-with-us.bg-dark-section.background-image(data-im
 					form.contact-form-sub.contact-form-bg
 						// Input name
 						.col-md-6
-							input.form-control(type='text', required='', name='Name', placeholder=' Your name')
+							input.form-control(id='Name' type='text', required='', name='Name', placeholder=' Your name')
+							input.form-access-control(id='Subject' type='text', name='Subject' placeholder='Subject',novalidate='')
 						// Input email
 						.col-md-6
-							input.form-control(type='email', required='', name='Email', placeholder='Your email')
+							input.form-control(id='Email' type='email', required='', name='Email', placeholder='Your email')
 						// textarea
 						.col-md-12
-							textarea.form-control(rows='9', required='', name='Message', placeholder='Your message')
+							textarea.form-control(id='Message' rows='9', required='', name='Message', placeholder='Your message')
 							p.success-msg.hidden.notify Your message has been send
 							p.error-msg.hidden.notify Error sending message
 							input.btn.btn-blue.btn-form(type='submit', value='Send')
