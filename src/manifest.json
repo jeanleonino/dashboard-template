@@ -1,0 +1,9 @@
+{
+    "name": "Cognitiving - Dashboards",
+    "short_name": "Cognitiving",
+    "start_url": ".",
+    "display": "minimal-ui",
+    "background_color": "#000",
+    "description": "Site da Cognitiving sobre Dashboards Cognitivos",
+    "lang": "pt-BR"
+}
