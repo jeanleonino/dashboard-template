@@ -11,6 +11,31 @@
 
 (function ($) {
 
+	/*------------------------------------
+	Firebase
+	------------------------------------*/
+	var config = {
+    apiKey: "AIzaSyDya419AToHv1epe3xXoskZquVBW5Hpblc",
+    authDomain: "dashboard-cognitivo.firebaseapp.com",
+    databaseURL: "https://dashboard-cognitivo.firebaseio.com",
+    projectId: "dashboard-cognitivo",
+    storageBucket: "dashboard-cognitivo.appspot.com",
+    messagingSenderId: "509643270121"
+  };
+	firebase.initializeApp(config);
+
+	function SaveContacts(name, email, message) {
+
+		var key = firebase.database().ref().child('contacts').push().key;
+	
+		return firebase.database().ref('contacts/' + key).set({
+			name: name,
+			email: email,
+			message: message,
+			date: Date.now()
+		})
+	}
+	
 	/*-------------------------------------
 		Loader
 	-------------------------------------*/
@@ -18,6 +43,8 @@
 		$('#status').fadeOut();
 		$('#preloader').delay(1000).fadeOut('slow');
 		$('body.dark-load').removeClass('dark-load');
+
+
 
 		/*-------------------------------------
 		Top menu - Textillate
@@ -927,20 +954,26 @@
 	/*-------------------------------------
 		E-mail Ajax Send
 	-------------------------------------*/
+	
 	$('.contact-form-sub:nth-child(1n)').on('submit',function() {
 		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
+		var ac=$("#Subject");
+		if(ac.val()===""){
+			SaveContacts($("#Name").val(), $("#Email").val(), $("#Message").val())
+			.then(function() {
+				th.trigger("reset");
+				th.find('.success-msg').slideToggle('slow');
+				setTimeout(function() {
+					th.find('.success-msg').slideToggle('hide');
+				}, 3000);
+			}).catch(function(err){alert(err)});
+		}else{	
 			th.trigger("reset");
 			th.find('.success-msg').slideToggle('slow');
 			setTimeout(function() {
-				// Done Functions
 				th.find('.success-msg').slideToggle('hide');
 			}, 3000);
-		});
+		}
 		return false;
 	});
 
