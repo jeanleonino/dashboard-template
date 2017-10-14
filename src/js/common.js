@@ -41,7 +41,7 @@
 	-------------------------------------*/
 	$(window).load(function () {
 		$('#status').fadeOut();
-		$('#preloader').delay(1000).fadeOut('slow');
+		$('#preloader').delay(100).hide();
 		$('body.dark-load').removeClass('dark-load');
 
 

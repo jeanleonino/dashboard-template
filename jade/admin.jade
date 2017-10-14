@@ -1,0 +1,25 @@
+doctype html
+html(lang='pt-BR')
+    head
+        meta(charset='utf-8')
+
+        title Cognitiving admin
+        meta(name='description', content='')
+
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        script(src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js")
+        
+    body.dark-load
+        section
+            h2 Contatos
+            p#message
+            table
+                thead
+                    tr
+                        th Data
+                        th Nome
+                        th Email
+                        th Mensagem
+                tbody#contacts
+        script(type="text/javascript" src="/js/admin.js")
