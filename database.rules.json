@@ -1,6 +1,10 @@
 {
   "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
+    ".read": false,
+    ".write": false
+    "contacts": {
+      ".write": true,
+      ".read": "auth.token.email.contains('@cognitiving.com')"
+    }
   }
 }
